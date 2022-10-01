@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/reset.css">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>テスト</title>
+</head>
+<body>
+    <h1 id="output">テストです</h1>
+<!-- 
+    <form name="example_form" method="post" action="">
+          <input type="hidden" name="name1" value="value1" />
+          <input type="text" name="name2" value="" />
+          <input type="radio" name="name3" value="31" />
+          <input type="radio" name="name3" value="32" />
+    </form>
+    <button class="onSend">ajax</button> -->
+
+    <form action="/test" method="POST">
+        <div>
+            <input type="checkbox" id="hibiya" name="location" value="hibiya"
+                   checked>
+            <label for="hibiya">HIBIYA</label>
+          </div>
+      
+          <div>
+            <input type="checkbox" id="ikebukuro" name="location" value="ikebukuro">
+            <label for="ikebukuro">ikebukuro</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="ueno" name="location" value="ueno">
+            <label for="ueno">uenoo</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="sibuya" name="location" value="sibuya">
+            <label for="sibuya">sibuya</label>
+          </div>
+
+          <button type="submit" value="送信">ボタン</button>
+    </form>
+
+
+    <script src="static/jquery.min.js"></script>
+    <script src="static/main.js"></script>
+</body>
+</html>
